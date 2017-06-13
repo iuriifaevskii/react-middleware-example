@@ -7,8 +7,8 @@ export default function(state =[], action) {
         case FETCH_USERS:
             debugger 
             console.log('ОТРИМУЄМО В REDUCER ACTION БЕЗ PROMICE, А ДАЛІ ОБРОБЛЯЄМО',action);
-        
-            return [...state,...action.payload];
+            console.log('Action payload: ',action.payload);
+            return [...state,...action.payload.data];
             
     }
 
