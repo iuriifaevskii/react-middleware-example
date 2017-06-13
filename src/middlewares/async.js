@@ -6,7 +6,10 @@ export default function( { dispatch } ){ //{ dispatch } бо передаємо 
 //          next(action);
 //     }
 // }
-        console.log('action at start:',action);
+        console.log('action at start:',action); // ПЕРЕВІРЯЄМО ЧИ ACTION МІСТИТЬ PROMICE. 
+        //Викликається два рази бо два рази проходиться по коду бо перший раз promice, а наступний object
+        
+        
         //якщо action не є payload 
         //або payload не має .then property, яке є тільки у проміс
         //то ми не турбуємся про відправку в наступний middleware
